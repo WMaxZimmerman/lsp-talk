@@ -1,0 +1,5 @@
+C:\bench\git\lsp-talk\org-lsp\OrgModeLanguageServer\obj\Debug\net7.0\OrgModeLanguageServer.csproj.AssemblyReference.cache
+C:\bench\git\lsp-talk\org-lsp\OrgModeLanguageServer\obj\Debug\net7.0\OrgModeLanguageServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\bench\git\lsp-talk\org-lsp\OrgModeLanguageServer\obj\Debug\net7.0\OrgModeLanguageServer.AssemblyInfoInputs.cache
+C:\bench\git\lsp-talk\org-lsp\OrgModeLanguageServer\obj\Debug\net7.0\OrgModeLanguageServer.AssemblyInfo.cs
+C:\bench\git\lsp-talk\org-lsp\OrgModeLanguageServer\obj\Debug\net7.0\OrgModeLanguageServer.csproj.CoreCompileInputs.cache
