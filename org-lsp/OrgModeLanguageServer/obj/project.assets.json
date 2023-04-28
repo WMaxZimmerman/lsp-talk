@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "MediatR/8.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MessagePack/2.3.85": {
         "type": "package",
         "dependencies": {
@@ -44,6 +57,166 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/5.0.0": {
         "type": "package",
         "compile": {
@@ -60,63 +233,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.VisualStudio.LanguageServer.Protocol/16.8.146": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.VisualStudio.LanguageServer.Protocol.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.VisualStudio.LanguageServer.Protocol.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/netstandard2.0/cs/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.0/de/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fr/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/it/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.0/ja/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.0/ko/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.0/pl/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/ru/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.0/tr/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll": {
-            "locale": "zh-Hant"
-          }
         }
       },
       "Microsoft.VisualStudio.Threading/17.0.64": {
@@ -307,6 +423,98 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "OmniSharp.Extensions.JsonRpc/0.19.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "8.1.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.Logging": "2.0.0",
+          "Nerdbank.Streams": "2.6.81",
+          "Newtonsoft.Json": "11.0.2",
+          "OmniSharp.Extensions.JsonRpc.Generators": "0.19.0",
+          "System.Collections.Immutable": "1.7.1",
+          "System.IO.Pipelines": "4.7.3",
+          "System.Reactive": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/OmniSharp.Extensions.JsonRpc.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/OmniSharp.Extensions.JsonRpc.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "OmniSharp.Extensions.JsonRpc.Generators/0.19.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "OmniSharp.Extensions.LanguageProtocol/0.19.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
+          "OmniSharp.Extensions.JsonRpc": "0.19.0",
+          "OmniSharp.Extensions.JsonRpc.Generators": "0.19.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/OmniSharp.Extensions.LanguageProtocol.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/OmniSharp.Extensions.LanguageProtocol.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "OmniSharp.Extensions.LanguageServer/0.19.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "OmniSharp.Extensions.JsonRpc": "0.19.0",
+          "OmniSharp.Extensions.LanguageProtocol": "0.19.0",
+          "OmniSharp.Extensions.LanguageServer.Shared": "0.19.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "OmniSharp.Extensions.LanguageServer.Shared/0.19.0": {
+        "type": "package",
+        "dependencies": {
+          "OmniSharp.Extensions.LanguageProtocol": "0.19.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.Shared.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.Shared.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -850,6 +1058,18 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
+      "System.Reactive/4.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.0/System.Reactive.targets": {}
+        }
+      },
       "System.Reflection/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1323,6 +1543,24 @@
     }
   },
   "libraries": {
+    "MediatR/8.1.0": {
+      "sha512": "KJFnA0MV83bNOhvYbjIX1iDykhwFXoQu0KV7E1SVbNA/CmO2I7SAm2Baly0eS7VJ2GwlmStLajBfeiNgTpvYzQ==",
+      "type": "package",
+      "path": "mediatr/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.8.1.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
     "MessagePack/2.3.85": {
       "sha512": "wOabnqkrXp7oeEYLY4Kd0m0eT4falJQukqvErfz5Y4FKKo9mSQQ1+rMxx9mapF2el+P0XQxiZOBKFm+oCvu0aw==",
       "type": "package",
@@ -1378,6 +1616,136 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Configuration/2.0.0": {
+      "sha512": "SsI4RqI8EH00+cYO96tbftlh87sNUv1eeyuBU1XZdQkG0RrHAOjWgl7P0FoLeTSMXJpOnfweeOWj2d1/5H3FxA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
+      "sha512": "rHFrXqMIvQNq51H8RYTO4IWmDOYh8NUzyqGlh0xHWTP6XYnKk7Ryinys2uDs+Vu88b3AMlM3gBBSs78m6OQpYQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/2.0.0": {
+      "sha512": "IznHHzGUtrdpuQqIUdmzF6TYPcsYHONhHh3o9dGp39sX/9Zfmt476UnhvU0UhXgJnXXAikt/MpN6AuSLCCMdEQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/2.0.0": {
+      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging/2.0.0": {
+      "sha512": "VP10syWV/vxYYMKgZ2eDESmUsz3gPxvBn5J6tkVN8lI4M+dF43RN8fWsEPbcAneDmZrHl3Pv23z05nmyGkJlpg==",
+      "type": "package",
+      "path": "microsoft.extensions.logging/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
+        "microsoft.extensions.logging.2.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
+      "sha512": "6ZCllUYGFukkymSTx3Yr0G/ajRxoNJp7/FqSxSB4fGISST54ifBhgu4Nc0ItGi3i6DqwuNd8SUyObmiC++AO2Q==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Options/2.0.0": {
+      "sha512": "sAKBgjl2gWsECBLLR9K54T7/uZaP2n9GhMYHay/oOLfvpvX0+iNAlQ2NJgVE352C9Fs5CDV3VbNTK8T2aNKQFA==",
+      "type": "package",
+      "path": "microsoft.extensions.options/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.2.0.0.nupkg.sha512",
+        "microsoft.extensions.options.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
+      "sha512": "Y/lGICwO27fCkQRK3tZseVzFjZaxfGmui990E67sB4MuiPzdJHnJDS/BeYWrHShSSBgCl4KyKRx4ux686fftPg==",
+      "type": "package",
+      "path": "microsoft.extensions.options.configurationextensions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.options.configurationextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/2.0.0": {
+      "sha512": "ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
       "type": "package",
@@ -1409,47 +1777,6 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Microsoft.VisualStudio.LanguageServer.Protocol/16.8.146": {
-      "sha512": "BCwMY08o2aaTkmRHbq2XJ1CunYWKeF6ana5IP1J7F1NoIHCsqQCRXy4F/xUjTe9C+Z5v6JXSAClqtQZqFo9Oog==",
-      "type": "package",
-      "path": "microsoft.visualstudio.languageserver.protocol/16.8.146",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard1.0/Microsoft.VisualStudio.LanguageServer.Protocol.dll",
-        "lib/netstandard1.0/Microsoft.VisualStudio.LanguageServer.Protocol.xml",
-        "lib/netstandard1.0/cs/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/de/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/es/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/fr/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/it/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/ja/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/ko/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/pl/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/pt-BR/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/ru/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/tr/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/Microsoft.VisualStudio.LanguageServer.Protocol.dll",
-        "lib/netstandard2.0/Microsoft.VisualStudio.LanguageServer.Protocol.xml",
-        "lib/netstandard2.0/cs/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/de/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/es/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/fr/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/it/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/ja/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/ko/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/pl/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/ru/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/tr/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.LanguageServer.Protocol.resources.dll",
-        "microsoft.visualstudio.languageserver.protocol.16.8.146.nupkg.sha512",
-        "microsoft.visualstudio.languageserver.protocol.nuspec"
       ]
     },
     "Microsoft.VisualStudio.Threading/17.0.64": {
@@ -1715,6 +2042,90 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "OmniSharp.Extensions.JsonRpc/0.19.0": {
+      "sha512": "Ca54pd8U0KZmfta6S6ViDGUym1C8nsx2iBG8Mz1xQ3LRipg2le9oy4/zgYtEY2OMs2wXJASSyl1uZHBwL6Xfpg==",
+      "type": "package",
+      "path": "omnisharp.extensions.jsonrpc/0.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/packageicon.png",
+        "lib/netstandard2.0/OmniSharp.Extensions.JsonRpc.dll",
+        "lib/netstandard2.0/OmniSharp.Extensions.JsonRpc.pdb",
+        "lib/netstandard2.1/OmniSharp.Extensions.JsonRpc.dll",
+        "lib/netstandard2.1/OmniSharp.Extensions.JsonRpc.pdb",
+        "omnisharp.extensions.jsonrpc.0.19.0.nupkg.sha512",
+        "omnisharp.extensions.jsonrpc.nuspec"
+      ]
+    },
+    "OmniSharp.Extensions.JsonRpc.Generators/0.19.0": {
+      "sha512": "TB9JGuRAz+qZwF4XAgwr/Aa1IpbC/rZpuPFrmmfinrhFr25T8bo6OtcMifrjHgi55fod6MYlsuxur8PnOiOMBg==",
+      "type": "package",
+      "path": "omnisharp.extensions.jsonrpc.generators/0.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "analyzers/dotnet/cs/OmniSharp.Extensions.JsonRpc.Generators.dll",
+        "images/packageicon.png",
+        "lib/netstandard2.0/OmniSharp.Extensions.JsonRpc.Generators.dll",
+        "lib/netstandard2.0/OmniSharp.Extensions.JsonRpc.Generators.pdb",
+        "omnisharp.extensions.jsonrpc.generators.0.19.0.nupkg.sha512",
+        "omnisharp.extensions.jsonrpc.generators.nuspec"
+      ]
+    },
+    "OmniSharp.Extensions.LanguageProtocol/0.19.0": {
+      "sha512": "RH5EX9oMZkqtx4ROf9CN6c+yismhF680zcvZhulhK8IUwTr/aObwSQ6vcXqAXVNDLzO/7z5Kukdb4LJO3gptOA==",
+      "type": "package",
+      "path": "omnisharp.extensions.languageprotocol/0.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/packageicon.png",
+        "lib/netstandard2.0/OmniSharp.Extensions.LanguageProtocol.dll",
+        "lib/netstandard2.0/OmniSharp.Extensions.LanguageProtocol.pdb",
+        "lib/netstandard2.1/OmniSharp.Extensions.LanguageProtocol.dll",
+        "lib/netstandard2.1/OmniSharp.Extensions.LanguageProtocol.pdb",
+        "omnisharp.extensions.languageprotocol.0.19.0.nupkg.sha512",
+        "omnisharp.extensions.languageprotocol.nuspec"
+      ]
+    },
+    "OmniSharp.Extensions.LanguageServer/0.19.0": {
+      "sha512": "GlCNWQXHxheo1AME5lbHw07VxGI6uNAuTwX68FdaO0Ps3SKjGFFmbUgf7xinAcVpUGjebqYlPz96LCLfpTiFNQ==",
+      "type": "package",
+      "path": "omnisharp.extensions.languageserver/0.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/packageicon.png",
+        "lib/netstandard2.0/OmniSharp.Extensions.LanguageServer.dll",
+        "lib/netstandard2.0/OmniSharp.Extensions.LanguageServer.pdb",
+        "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.dll",
+        "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.pdb",
+        "omnisharp.extensions.languageserver.0.19.0.nupkg.sha512",
+        "omnisharp.extensions.languageserver.nuspec"
+      ]
+    },
+    "OmniSharp.Extensions.LanguageServer.Shared/0.19.0": {
+      "sha512": "O+hXSzJQ3TmEyKuvNI1FAE6sfPxGz4IQ/K+REGzWj2wz8vgwP2mAY15AwvenLtVVfJiZILr1f2lE8RsUw22v3Q==",
+      "type": "package",
+      "path": "omnisharp.extensions.languageserver.shared/0.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/packageicon.png",
+        "lib/netstandard2.0/OmniSharp.Extensions.LanguageServer.Shared.dll",
+        "lib/netstandard2.0/OmniSharp.Extensions.LanguageServer.Shared.pdb",
+        "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.Shared.dll",
+        "lib/netstandard2.1/OmniSharp.Extensions.LanguageServer.Shared.pdb",
+        "omnisharp.extensions.languageserver.shared.0.19.0.nupkg.sha512",
+        "omnisharp.extensions.languageserver.shared.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -2897,6 +3308,32 @@
         "ref/xamarinwatchos10/_._",
         "system.net.websockets.4.3.0.nupkg.sha512",
         "system.net.websockets.nuspec"
+      ]
+    },
+    "System.Reactive/4.4.1": {
+      "sha512": "iSTPeWR9HJhGoNV4WhVlvofuiTjpok1i4E3LPgMdbMqf3jKhFlT9HAlO32lb52NLppWC/4dZQFfUzTytvyXBmw==",
+      "type": "package",
+      "path": "system.reactive/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netcoreapp3.0/System.Reactive.dll",
+        "build/netcoreapp3.0/System.Reactive.targets",
+        "build/netcoreapp3.0/System.Reactive.xml",
+        "buildTransitive/netcoreapp3.0/System.Reactive.targets",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netcoreapp3.0/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.4.1.nupkg.sha512",
+        "system.reactive.nuspec"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -4151,7 +4588,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.VisualStudio.LanguageServer.Protocol >= 16.8.56",
+      "OmniSharp.Extensions.LanguageServer >= 0.19.0",
       "StreamJsonRpc >= 2.10.6"
     ]
   },
@@ -4162,11 +4599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+      "projectUniqueName": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
       "projectName": "OrgModeLanguageServer",
-      "projectPath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+      "projectPath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
       "packagesPath": "C:\\Users\\mzimmerman\\.nuget\\packages\\",
-      "outputPath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\obj\\",
+      "outputPath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4200,9 +4637,9 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "Microsoft.VisualStudio.LanguageServer.Protocol": {
+          "OmniSharp.Extensions.LanguageServer": {
             "target": "Package",
-            "version": "[16.8.56, )"
+            "version": "[0.19.0, )"
           },
           "StreamJsonRpc": {
             "target": "Package",
@@ -4230,16 +4667,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "OrgModeLanguageServer depends on Microsoft.VisualStudio.LanguageServer.Protocol (>= 16.8.56) but Microsoft.VisualStudio.LanguageServer.Protocol 16.8.56 was not found. An approximate best match of Microsoft.VisualStudio.LanguageServer.Protocol 16.8.146 was resolved.",
-      "libraryId": "Microsoft.VisualStudio.LanguageServer.Protocol",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
     {
       "code": "NU1603",
       "level": "Warning",

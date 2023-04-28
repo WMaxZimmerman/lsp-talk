@@ -1,15 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "gcq3W+JTxFNrXFArJyLmkLB5C7bf0wcdJMBGAGq5EkJCdUQg0ZuvbZUBh/ijaqeRs5WST5PIAVsyI/Vg4KJbGQ==",
+  "dgSpecHash": "wTi6ptABmxdbCp8wOD//sNGjghxXWSVtXXnrny7i0ePLwjoAn9ujoTAnSMpYtpak8LQmPdkOenwinYkUgLc6UQ==",
   "success": true,
-  "projectFilePath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+  "projectFilePath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\messagepack\\2.3.85\\messagepack.2.3.85.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\messagepack.annotations\\2.3.85\\messagepack.annotations.2.3.85.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.0\\microsoft.extensions.configuration.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.0\\microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.configuration.binder\\2.0.0\\microsoft.extensions.configuration.binder.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.logging\\2.0.0\\microsoft.extensions.logging.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.options\\2.0.0\\microsoft.extensions.options.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.0.0\\microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.visualstudio.languageserver.protocol\\16.8.146\\microsoft.visualstudio.languageserver.protocol.16.8.146.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.visualstudio.threading\\17.0.64\\microsoft.visualstudio.threading.17.0.64.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\17.0.64\\microsoft.visualstudio.threading.analyzers.17.0.64.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.visualstudio.validation\\16.10.35\\microsoft.visualstudio.validation.16.10.35.nupkg.sha512",
@@ -17,6 +27,11 @@
     "C:\\Users\\mzimmerman\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\nerdbank.streams\\2.8.54\\nerdbank.streams.2.8.54.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\omnisharp.extensions.jsonrpc\\0.19.0\\omnisharp.extensions.jsonrpc.0.19.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\omnisharp.extensions.jsonrpc.generators\\0.19.0\\omnisharp.extensions.jsonrpc.generators.0.19.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\omnisharp.extensions.languageprotocol\\0.19.0\\omnisharp.extensions.languageprotocol.0.19.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\omnisharp.extensions.languageserver\\0.19.0\\omnisharp.extensions.languageserver.0.19.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\omnisharp.extensions.languageserver.shared\\0.19.0\\omnisharp.extensions.languageserver.shared.0.19.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -51,6 +66,7 @@
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.net.websockets\\4.3.0\\system.net.websockets.4.3.0.nupkg.sha512",
+    "C:\\Users\\mzimmerman\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
@@ -77,16 +93,6 @@
     "C:\\Users\\mzimmerman\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "OrgModeLanguageServer depends on Microsoft.VisualStudio.LanguageServer.Protocol (>= 16.8.56) but Microsoft.VisualStudio.LanguageServer.Protocol 16.8.56 was not found. An approximate best match of Microsoft.VisualStudio.LanguageServer.Protocol 16.8.146 was resolved.",
-      "libraryId": "Microsoft.VisualStudio.LanguageServer.Protocol",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
     {
       "code": "NU1603",
       "level": "Warning",

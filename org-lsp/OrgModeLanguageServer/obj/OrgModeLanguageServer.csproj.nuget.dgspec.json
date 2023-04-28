@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {}
+    "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {}
   },
   "projects": {
-    "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {
+    "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+        "projectUniqueName": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
         "projectName": "OrgModeLanguageServer",
-        "projectPath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+        "projectPath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
         "packagesPath": "C:\\Users\\mzimmerman\\.nuget\\packages\\",
-        "outputPath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\obj\\",
+        "outputPath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,9 +45,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.VisualStudio.LanguageServer.Protocol": {
+            "OmniSharp.Extensions.LanguageServer": {
               "target": "Package",
-              "version": "[16.8.56, )"
+              "version": "[0.19.0, )"
             },
             "StreamJsonRpc": {
               "target": "Package",

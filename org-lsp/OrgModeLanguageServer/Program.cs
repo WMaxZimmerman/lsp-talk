@@ -2,8 +2,12 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.LanguageServer.Protocol;
+using OmniSharp.Extensions.LanguageServer.Protocol;
+using OmniSharp.Extensions.LanguageServer.Protocol.Models;
+using OmniSharp.Extensions.LanguageServer.Protocol.Server;
+using OmniSharp.Extensions.LanguageServer.Protocol.Server.Capabilities;
 using StreamJsonRpc;
+using Range = OmniSharp.Extensions.LanguageServer.Protocol.Models.Range;
 
 namespace OrgModeLanguageServer
 {
@@ -35,7 +39,7 @@ namespace OrgModeLanguageServer
             await _jsonRpc.Completion;
         }
 
-        [JsonRpcMethod(Methods.InitializeName)]
+        [JsonRpcMethod("initialize")]
         public InitializeResult Initialize(InitializeParams initializeParams)
         {
             return new InitializeResult
@@ -51,13 +55,13 @@ namespace OrgModeLanguageServer
             };
         }
 
-        [JsonRpcMethod(Methods.TextDocumentDidOpenName)]
+        [JsonRpcMethod("textDocument/didOpen")]
         public void OnDocumentOpened(DidOpenTextDocumentParams openParams)
         {
             ValidateDocument(openParams.TextDocument.Uri, openParams.TextDocument.Text);
         }
 
-        [JsonRpcMethod(Methods.TextDocumentDidChangeName)]
+        [JsonRpcMethod("textDocument/didChange")]
         public void OnDocumentChanged(DidChangeTextDocumentParams changeParams)
         {
             var text = changeParams.ContentChanges.FirstOrDefault()?.Text;
@@ -67,14 +71,16 @@ namespace OrgModeLanguageServer
             }
         }
 
-        private void ValidateDocument(Uri documentUri, string text)
+        private void ValidateDocument(DocumentUri documentUri, string text)
         {
+            var systemUri = new Uri(documentUri.ToString());
+
             var diagnostics = text.Split('\n')
                 .Select((line, index) => (line, lineNumber: index + 1))
                 .Where(x => x.line.StartsWith("* TODO"))
                 .Select(x => new Diagnostic
                 {
-                    Range = new Microsoft.VisualStudio.LanguageServer.Protocol.Range { Start = new Position(x.lineNumber, 0), End = new Position(x.lineNumber, x.line.Length) },
+                    Range = new Range { Start = new Position(x.lineNumber, 0), End = new Position(x.lineNumber, x.line.Length) },
                     Message = "TODO item found",
                     Severity = DiagnosticSeverity.Information,
                     Source = "org-mode-ls"
@@ -82,8 +88,8 @@ namespace OrgModeLanguageServer
                 .ToArray();
 
             _jsonRpc.NotifyAsync(
-                Methods.TextDocumentPublishDiagnosticsName,
-                new Microsoft.VisualStudio.LanguageServer.Protocol.PublishDiagnosticsParams { Uri = documentUri, Diagnostics = diagnostics });
+                "textDocument/publishDiagnostics",
+                new PublishDiagnosticsParams { Uri = systemUri, Diagnostics = diagnostics });
         }
     }
 }
