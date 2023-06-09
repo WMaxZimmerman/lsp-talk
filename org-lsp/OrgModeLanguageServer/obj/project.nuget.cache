@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wTi6ptABmxdbCp8wOD//sNGjghxXWSVtXXnrny7i0ePLwjoAn9ujoTAnSMpYtpak8LQmPdkOenwinYkUgLc6UQ==",
+  "dgSpecHash": "E07PMuQG5lkaN7/gISmbiC9sSlM7tcpC/NOMs443Drzl3OtVZTWOFGURYFAYoAqEpWavqBU3qylTt6VS1q83uQ==",
   "success": true,
-  "projectFilePath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+  "projectFilePath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mzimmerman\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
     "C:\\Users\\mzimmerman\\.nuget\\packages\\messagepack\\2.3.85\\messagepack.2.3.85.nupkg.sha512",

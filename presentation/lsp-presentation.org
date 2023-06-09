@@ -1,0 +1,14 @@
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Lets Talk LSP
+#+FILETAGS: lsp talk iadnug
+
+* What Is LSP?
+
+* What Is DAP?
+
+* What are the different LS options for C#?
+
+* How do the Language Servers function?
+
+* How can I write my own Language Server?

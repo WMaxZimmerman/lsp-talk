@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {}
+    "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {}
   },
   "projects": {
-    "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {
+    "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+        "projectUniqueName": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
         "projectName": "OrgModeLanguageServer",
-        "projectPath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
+        "projectPath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\OrgModeLanguageServer.csproj",
         "packagesPath": "C:\\Users\\mzimmerman\\.nuget\\packages\\",
-        "outputPath": "c:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\obj\\",
+        "outputPath": "C:\\bench\\git\\lsp-talk\\org-lsp\\OrgModeLanguageServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
