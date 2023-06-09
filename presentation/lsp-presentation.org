@@ -8,7 +8,16 @@
 * What Is DAP?
 
 * What are the different LS options for C#?
+** Omnisharp
+- [[https://www.omnisharp.net/][Link]]
+
+** CSharp-LS
+- [[https://github.com/razzmatazz/csharp-language-server][Link]]
 
 * How do the Language Servers function?
+- MediatR
+- JSON RPC
+- Client
+- Server
 
 * How can I write my own Language Server?
