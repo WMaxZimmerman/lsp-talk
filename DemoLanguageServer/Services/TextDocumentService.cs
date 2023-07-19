@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using DemoLanguageServer.Models;
 using JsonRpc.Contracts;
 using LanguageServer.VsCode;
 using LanguageServer.VsCode.Contracts;
@@ -15,7 +13,8 @@ namespace DemoLanguageServer.Services
         {
             // Note that Hover is cancellable.
             await Task.Delay(1000, ct);
-            return new Hover {Contents = $"Look Ma, A Hover Message!\n\nat position '{position}'\n\nin the document '{textDocument}'" };
+            var message = $"Look Ma, A Hover Message!\n\nat position '{position}'\n\nin the document '{textDocument}'";
+            return new Hover {Contents =  message};
         }
 
         [JsonRpcMethod]
@@ -38,20 +37,21 @@ namespace DemoLanguageServer.Services
                 // Lint the document when it's changed.
                 var doc1 = ((SessionDocument) sender).Document;
                 var diag1 = session.DiagnosticProvider.LintDocument(doc1, session.Settings.MaxNumberOfProblems);
+                
                 if (session.Documents.ContainsKey(doc1.Uri))
                 {
                     // In case the document has been closed when we were linting…
                     await session.Client.Document.PublishDiagnostics(doc1.Uri, diag1);
                 }
             };
+            
             Session.Documents.TryAdd(textDocument.Uri, doc);
             var diag = Session.DiagnosticProvider.LintDocument(doc.Document, Session.Settings.MaxNumberOfProblems);
             await Client.Document.PublishDiagnostics(textDocument.Uri, diag);
         }
 
         [JsonRpcMethod(IsNotification = true)]
-        public void DidChange(TextDocumentIdentifier textDocument,
-            ICollection<TextDocumentContentChangeEvent> contentChanges)
+        public void DidChange(TextDocumentIdentifier textDocument, ICollection<TextDocumentContentChangeEvent> contentChanges)
         {
             Session.Documents[textDocument.Uri].NotifyChanges(contentChanges);
         }
@@ -70,20 +70,27 @@ namespace DemoLanguageServer.Services
             {
                 await Client.Document.PublishDiagnostics(textDocument.Uri, new Diagnostic[0]);
             }
+            
             Session.Documents.TryRemove(textDocument.Uri, out _);
         }
 
         private static readonly CompletionItem[] PredefinedCompletionItems =
         {
-            new CompletionItem("LSP", CompletionItemKind.Keyword,
+            new CompletionItem(
+                "LSP",
+                CompletionItemKind.Keyword,
                 "Keyword1",
                 MarkupContent.Markdown("Short for 'Language Server Protocol' is a protocol defined by MS to make a more unified IDE experience."),
                 null),
-            new CompletionItem("DAP", CompletionItemKind.Keyword,
+            new CompletionItem(
+                "DAP",
+                CompletionItemKind.Keyword,
                 "Keyword2",
                 "Short for 'Debug Adapter Protocol' is a protocol defined by MS to make a more unified debugging experience.",
                 null),
-            new CompletionItem("Dotnet", CompletionItemKind.Keyword,
+            new CompletionItem(
+                "Dotnet",
+                CompletionItemKind.Keyword,
                 "Keyword3",
                 "Objectively the best programming framework. Sometimes used in place of C#.", null),
         };

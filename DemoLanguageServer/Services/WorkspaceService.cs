@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
+﻿using DemoLanguageServer.Models;
 using JsonRpc.Contracts;
 using LanguageServer.VsCode.Contracts;
 

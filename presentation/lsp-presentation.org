@@ -98,4 +98,10 @@
 
 * Can I write my own Language Server?
 ** Yup
-** Lets do that
+
+** Questions?
+- Me :: Max Zimmerman
+- Role :: Software Consultant/Coach
+- Company :: Lean TECHniques
+  
+** JK. Lets Make One

@@ -29,35 +29,47 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide"><h1 class="title">Lets Talk LSP/DAP</h1><p class="subtitle"></p>
-<h2 class="author">Max Zimmerman</h2><p class="date">Created: 2023-07-17 Mon 19:34</p>
+<h2 class="author">Max Zimmerman</h2><p class="date">Created: 2023-07-18 Tue 21:11</p>
 </section>
 <section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#/slide-orgb4bc3fd">1. What Is LSP/DAP?</a>
+<li><a href="#/slide-orgd5e52fe">1. What Is LSP/DAP?</a>
 <ul>
-<li><a href="#/slide-org4c014c9">1.1. What Is LSP?</a></li>
-<li><a href="#/slide-org8ff91cf">1.2. What Is DAP?</a></li>
+<li><a href="#/slide-orgc0761d3">1.1. What Is LSP?</a></li>
+<li><a href="#/slide-orgac90d0a">1.2. What Is DAP?</a></li>
 </ul>
 </li>
-<li><a href="#/slide-org688abe2">2. But&#x2026; Why?</a>
+<li><a href="#/slide-orge06ea17">2. But&#x2026; Why?</a>
 <ul>
-<li><a href="#/slide-orgc9c6856">2.1. LSP</a>
+<li><a href="#/slide-org37b295c">2.1. LSP</a>
 <ul>
-<li><a href="#/slide-org667e07e">2.1.1. What Dotnet Language Servers Exist?</a></li>
-<li><a href="#/slide-orgfb0912f">2.1.2. What editors use LSP?</a></li>
+<li><a href="#/slide-orgaa240ca">2.1.1. What Dotnet Language Servers Exist?</a></li>
+<li><a href="#/slide-org6ef35c0">2.1.2. What editors use LSP?</a></li>
 </ul>
 </li>
-<li><a href="#/slide-orga931248">2.2. DAP</a>
+<li><a href="#/slide-orgdfbb699">2.2. DAP</a>
 <ul>
-<li><a href="#/slide-org7f44603">2.2.1. What Dotnet Debuggers Exist?</a></li>
-<li><a href="#/slide-orgb182d21">2.2.2. What editors use DAP?</a></li>
+<li><a href="#/slide-orgbabed3b">2.2.1. What Dotnet Debuggers Exist?</a></li>
+<li><a href="#/slide-org43c7edc">2.2.2. What editors use DAP?</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#/slide-org3e016b6">3. Can I write my own Language Server?</a></li>
+<li><a href="#/slide-org1535c52">3. Examples</a>
+<ul>
+<li><a href="#/slide-org69c91c8">3.1. LSP Request</a></li>
+<li><a href="#/slide-org02c7503">3.2. LSP Response</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orga9f4be8">4. Can I write my own Language Server?</a>
+<ul>
+<li><a href="#/slide-orgf4c3272">4.1. Yup</a></li>
+<li><a href="#/slide-orgef36b03">4.2. Questions?</a></li>
+<li><a href="#/slide-org3e4c1af">4.3. Lets do that</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -65,13 +77,13 @@
 
 
 <section>
-<section id="slide-orgb4bc3fd">
-<h2 id="orgb4bc3fd"><span class="section-number-2">1.</span> What Is LSP/DAP?</h2>
+<section id="slide-orgd5e52fe">
+<h2 id="orgd5e52fe"><span class="section-number-2">1.</span> What Is LSP/DAP?</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 </section>
-<section id="slide-org4c014c9">
-<h3 id="org4c014c9"><span class="section-number-3">1.1.</span> What Is LSP?</h3>
+<section id="slide-orgc0761d3">
+<h3 id="orgc0761d3"><span class="section-number-3">1.1.</span> What Is LSP?</h3>
 <ul>
 <li>Language Server Protocol</li>
 <li>A standardized schema for Language Servers to provide IDE-like Features</li>
@@ -81,8 +93,8 @@
 </ul>
 
 </section>
-<section id="slide-org8ff91cf">
-<h3 id="org8ff91cf"><span class="section-number-3">1.2.</span> What Is DAP?</h3>
+<section id="slide-orgac90d0a">
+<h3 id="orgac90d0a"><span class="section-number-3">1.2.</span> What Is DAP?</h3>
 <ul>
 <li>Debug Adapter Protocol</li>
 <li>A standardized schema for Clients to interact with Debuggers</li>
@@ -93,8 +105,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org688abe2">
-<h2 id="org688abe2"><span class="section-number-2">2.</span> But&#x2026; Why?</h2>
+<section id="slide-orge06ea17">
+<h2 id="orge06ea17"><span class="section-number-2">2.</span> But&#x2026; Why?</h2>
 <ul>
 <li>Separation of Language Features / Debuggers and Editors</li>
 <li>Easier Adoption Migration</li>
@@ -103,13 +115,13 @@
 </ul>
 
 </section>
-<section id="slide-orgc9c6856">
-<h3 id="orgc9c6856"><span class="section-number-3">2.1.</span> LSP</h3>
+<section id="slide-org37b295c">
+<h3 id="org37b295c"><span class="section-number-3">2.1.</span> LSP</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 </section>
-<section id="slide-org667e07e">
-<h4 id="org667e07e"><span class="section-number-4">2.1.1.</span> What Dotnet Language Servers Exist?</h4>
+<section id="slide-orgaa240ca">
+<h4 id="orgaa240ca"><span class="section-number-4">2.1.1.</span> What Dotnet Language Servers Exist?</h4>
 <ul>
 <li><a href="https://www.omnisharp.net/">Omnisharp</a>
 <ul>
@@ -125,8 +137,8 @@
 </ul>
 
 </section>
-<section id="slide-orgfb0912f">
-<h4 id="orgfb0912f"><span class="section-number-4">2.1.2.</span> What editors use LSP?</h4>
+<section id="slide-org6ef35c0">
+<h4 id="org6ef35c0"><span class="section-number-4">2.1.2.</span> What editors use LSP?</h4>
 <ul>
 <li>VS Code</li>
 <li>Sublime</li>
@@ -141,13 +153,13 @@
 
 
 </section>
-<section id="slide-orga931248">
-<h3 id="orga931248"><span class="section-number-3">2.2.</span> DAP</h3>
+<section id="slide-orgdfbb699">
+<h3 id="orgdfbb699"><span class="section-number-3">2.2.</span> DAP</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
 </section>
-<section id="slide-org7f44603">
-<h4 id="org7f44603"><span class="section-number-4">2.2.1.</span> What Dotnet Debuggers Exist?</h4>
+<section id="slide-orgbabed3b">
+<h4 id="orgbabed3b"><span class="section-number-4">2.2.1.</span> What Dotnet Debuggers Exist?</h4>
 <ul>
 <li><a href="https://github.com/dotnet/vscode-csharp">vscode-csharp</a>
 <ul>
@@ -163,8 +175,8 @@
 </ul>
 
 </section>
-<section id="slide-orgb182d21">
-<h4 id="orgb182d21"><span class="section-number-4">2.2.2.</span> What editors use DAP?</h4>
+<section id="slide-org43c7edc">
+<h4 id="org43c7edc"><span class="section-number-4">2.2.2.</span> What editors use DAP?</h4>
 <ul>
 <li>VS Code</li>
 <li>Atom</li>
@@ -178,11 +190,81 @@
 </section>
 </section>
 <section>
-<section id="slide-org3e016b6">
-<h2 id="org3e016b6"><span class="section-number-2">3.</span> Can I write my own Language Server?</h2>
-<p>
-yup
-</p>
+<section id="slide-org1535c52">
+<h2 id="org1535c52"><span class="section-number-2">3.</span> Examples</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-org69c91c8">
+<h3 id="org69c91c8"><span class="section-number-3">3.1.</span> LSP Request</h3>
+<div class="org-src-container">
+
+<pre  class="src src-js"   ><code trim>{
+  <span style="color: #6aaf50;">"jsonrpc"</span>: <span style="color: #6aaf50;">"2.0"</span>,
+  <span style="color: #6aaf50;">"id"</span> : 1,
+  <span style="color: #6aaf50;">"method"</span>: <span style="color: #6aaf50;">"textDocument/definition"</span>,
+  <span style="color: #6aaf50;">"params"</span>: {
+      <span style="color: #6aaf50;">"textDocument"</span>: {
+          <span style="color: #6aaf50;">"uri"</span>: <span style="color: #6aaf50;">"file:///p%3A/mseng/VSCode/Playgrounds/cpp/use.cpp"</span>
+      },
+      <span style="color: #6aaf50;">"position"</span>: {
+          <span style="color: #6aaf50;">"line"</span>: 3,
+          <span style="color: #6aaf50;">"character"</span>: 12
+      }
+  }
+}
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org02c7503">
+<h3 id="org02c7503"><span class="section-number-3">3.2.</span> LSP Response</h3>
+<div class="org-src-container">
+
+<pre  class="src src-js"   ><code trim>{
+  <span style="color: #6aaf50;">"jsonrpc"</span>: <span style="color: #6aaf50;">"2.0"</span>,
+  <span style="color: #6aaf50;">"id"</span>: <span style="color: #6aaf50;">"1"</span>,
+  <span style="color: #6aaf50;">"result"</span>: {
+      <span style="color: #6aaf50;">"uri"</span>: <span style="color: #6aaf50;">"file:///p%3A/mseng/VSCode/Playgrounds/cpp/provide.cpp"</span>,
+      <span style="color: #6aaf50;">"range"</span>: {
+          <span style="color: #6aaf50;">"start"</span>: {
+              <span style="color: #6aaf50;">"line"</span>: 0,
+              <span style="color: #6aaf50;">"character"</span>: 4
+          },
+          <span style="color: #6aaf50;">"end"</span>: {
+              <span style="color: #6aaf50;">"line"</span>: 0,
+              <span style="color: #6aaf50;">"character"</span>: 11
+          }
+      }
+  }
+}
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orga9f4be8">
+<h2 id="orga9f4be8"><span class="section-number-2">4.</span> Can I write my own Language Server?</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-orgf4c3272">
+<h3 id="orgf4c3272"><span class="section-number-3">4.1.</span> Yup</h3>
+
+</section>
+<section id="slide-orgef36b03">
+<h3 id="orgef36b03"><span class="section-number-3">4.2.</span> Questions?</h3>
+<dl>
+<dt>Me</dt><dd>Max Zimmerman</dd>
+<dt>Role</dt><dd>Software Consultant/Coach</dd>
+<dt>Company</dt><dd>Lean TECHniques</dd>
+
+</dl>
+
+</section>
+<section id="slide-org3e4c1af">
+<h3 id="org3e4c1af"><span class="section-number-3">4.3.</span> Lets do that</h3>
 </section>
 </section>
 </div>

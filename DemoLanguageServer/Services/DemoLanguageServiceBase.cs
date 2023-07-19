@@ -1,4 +1,4 @@
-﻿using System;
+﻿using DemoLanguageServer.Models;
 using JsonRpc.Server;
 using LanguageServer.VsCode.Contracts;
 using LanguageServer.VsCode.Contracts.Client;
