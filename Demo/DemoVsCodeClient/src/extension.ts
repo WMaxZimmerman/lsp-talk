@@ -6,7 +6,7 @@ import { LanguageClient, LanguageClientOptions, ServerOptions } from "vscode-lan
 // Defines the search path of your language server DLL. (.NET Core)
 const languageServerPaths = [
     "server/DemoLanguageServer.dll",
-    "../../DemoLanguageServer/bin/Debug/net7.0/DemoLanguageServer.dll",
+    "../DemoLanguageServer/bin/Debug/net7.0/DemoLanguageServer.dll",
 ]
 
 let client: LanguageClient | undefined;
