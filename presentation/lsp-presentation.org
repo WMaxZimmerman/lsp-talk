@@ -1,23 +1,101 @@
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Lets Talk LSP
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+FILETAGS: lsp talk iadnug
+#+TITLE: Lets Talk LSP/DAP
+#+AUTHOR: Max Zimmerman
 
-* What Is LSP?
 
-* What Is DAP?
+* What Is LSP/DAP?
+** What Is LSP?
+- Language Server Protocol
+- A standardized schema for Language Servers to provide IDE-like Features
+- Developed by Microsoft in 2016 for VS Code / Typescript
+- JSON-RPC protocol
+  
+** What Is DAP?
+- Debug Adapter Protocol
+- A standardized schema for Clients to interact with Debuggers
+- Developed by Microsoft in 2016 for VS Code / Typescript
 
-* What are the different LS options for C#?
-** Omnisharp
-- [[https://www.omnisharp.net/][Link]]
+* But... Why?
+- Separation of Language Features / Debuggers and Editors
+- Easier Adoption Migration
+- Singular Environment / Ecosystem
 
-** CSharp-LS
-- [[https://github.com/razzmatazz/csharp-language-server][Link]]
+** LSP
+*** What Dotnet Language Servers Exist?
+- [[https://www.omnisharp.net/][Omnisharp]]
+  - Written in C#
+- [[https://github.com/razzmatazz/csharp-language-server][CSharp-LS]]
+  - Written in F#
 
-* How do the Language Servers function?
-- MediatR
-- JSON RPC
-- Client
-- Server
+*** What editors use LSP?
+- VS Code
+- Sublime
+- Atom
+- Emacs
+- Vim
+- IntelliJ IDEA
+- Eclipse
+- Visual Studio
 
-* How can I write my own Language Server?
+
+** DAP
+*** What Dotnet Debuggers Exist?
+- [[https://github.com/dotnet/vscode-csharp][vscode-csharp]]
+  - Written in C#
+- [[https://github.com/Samsung/netcoredbg][netcoredbg]]
+  - Written in C#
+
+*** What editors use DAP?
+- VS Code
+- Atom
+- Emacs
+- Vim
+- Eclipse
+- Visual Studio
+
+* Examples
+** LSP Request
+#+BEGIN_SRC js
+  {
+    "jsonrpc": "2.0",
+    "id" : 1,
+    "method": "textDocument/definition",
+    "params": {
+        "textDocument": {
+            "uri": "file:///p%3A/mseng/VSCode/Playgrounds/cpp/use.cpp"
+        },
+        "position": {
+            "line": 3,
+            "character": 12
+        }
+    }
+  }
+#+END_SRC
+
+** LSP Response
+#+BEGIN_SRC js
+  {
+    "jsonrpc": "2.0",
+    "id": "1",
+    "result": {
+        "uri": "file:///p%3A/mseng/VSCode/Playgrounds/cpp/provide.cpp",
+        "range": {
+            "start": {
+                "line": 0,
+                "character": 4
+            },
+            "end": {
+                "line": 0,
+                "character": 11
+            }
+        }
+    }
+  }
+#+END_SRC
+
+* Can I write my own Language Server?
+** Yup
+** Lets do that
