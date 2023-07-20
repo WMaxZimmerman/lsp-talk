@@ -1,0 +1,16 @@
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: LSP Presentation
+#+FILETAGS:
+
+* Bio
+I am a developer consultant / coach that specialize in dotnet and full-stack
+development. I have been working in the industry for around a decade. Gaining
+experience with and exposure to many different companies and domains along the
+way.
+
+* Presentation Abstract
+This presentation is a high level overview of the Language Server Protocol (LSP)
+and Debug Adapter Protocol. It also goes over what that looks like as it relates
+to dotnet development and how you can start to leverage or play with the
+different servers that are available.
